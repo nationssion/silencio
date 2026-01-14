@@ -129,6 +129,174 @@
       >
     </div>
 
+
+    <!-- Telegram Guide Section -->
+<section class="telegram-guide" style="
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 16px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+">
+  <h2 style="
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: var(--text);
+    font-weight: 700;
+  ">
+    Don’t have Telegram yet?
+  </h2>
+
+  <ol style="
+    list-style: none;
+    padding: 0;
+    counter-reset: step;
+  ">
+    <li style="
+      position: relative;
+      padding-left: 36px;
+      margin-bottom: 18px;
+    ">
+      <span style="
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: var(--pink);
+        color: var(--bg);
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 0.85rem;
+      ">1</span>
+      Open your app store (Google Play or Apple App Store)
+    </li>
+    <li style="
+      position: relative;
+      padding-left: 36px;
+      margin-bottom: 18px;
+    ">
+      <span style="
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: var(--cyan);
+        color: var(--bg);
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 0.85rem;
+      ">2</span>
+      Search for “Telegram” and install the official app
+    </li>
+    <li style="
+      position: relative;
+      padding-left: 36px;
+      margin-bottom: 24px;
+    ">
+      <span style="
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #21f1f2;
+        color: var(--bg);
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 0.85rem;
+      ">3</span>
+      Sign up, then use the links below to join our channel & group
+    </li>
+  </ol>
+
+  <!-- Copy Links Section -->
+  <div style="
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 10px;
+  ">
+    <div style="
+      background: var(--card);
+      padding: 14px;
+      border-radius: var(--radius);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: var(--shadow);
+    ">
+      <span>Channel</span>
+      <button onclick="copyLink('https://t.me/UPDATES24_7_TG_CHANNEL')" style="
+        background: linear-gradient(135deg, var(--pink), var(--cyan));
+        color: var(--bg);
+        border: none;
+        padding: 6px 12px;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 0.85rem;
+      ">Copy</button>
+    </div>
+
+    <div style="
+      background: var(--card);
+      padding: 14px;
+      border-radius: var(--radius);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: var(--shadow);
+    ">
+      <span>Discussion Group</span>
+      <button onclick="copyLink('https://t.me/+I64Ey9HdZ9cwYjY0')" style="
+        background: linear-gradient(135deg, var(--pink), var(--cyan));
+        color: var(--bg);
+        border: none;
+        padding: 6px 12px;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 0.85rem;
+      ">Copy</button>
+    </div>
+  </div>
+
+  <p style="text-align: center; margin-top: 16px; font-size: 0.85rem; color: var(--pink);">
+    Save these links — paste them in Telegram after install.
+  </p>
+</section>
+
+<script>
+  function copyLink(url) {
+    navigator.clipboard.writeText(url).then(() => {
+      // Optional: show brief feedback (e.g., change button text temporarily)
+      const buttons = document.querySelectorAll('button');
+      buttons.forEach(btn => {
+        if (btn.onclick && btn.onclick.toString().includes(url)) {
+          const originalText = btn.textContent;
+          btn.textContent = 'Copied!';
+          setTimeout(() => btn.textContent = originalText, 1500);
+        }
+      });
+    }).catch(err => {
+      console.warn('Copy failed:', err);
+    });
+  }
+</script>
+
    <footer>
   © 2025 UPDATES24/7 — All Rights Reserved.
   &nbsp;|&nbsp;
