@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UPDATES24/7 — Your Hub for verified Opportunities</title>
+    <meta
+      name="description"
+      content="Discover top-paying platforms, get real-time updates, and join WhatsApp or Telegram to start earning with UPDATES24/7."
+    />
+
+    <style>
+      :root {
+        --bg: #0a0a0a;
+        --card: #141414;
+        --text: #ffffff;
+        --muted: #bbbbbb;
+        --pink: #ff2a55;
+        --cyan: #21f1f2;
+        --radius: 16px;
+        --shadow: 0 8px 25px rgba(0, 0, 0, 0.45);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+      }
+      header {
+        text-align: center;
+        padding: 40px 16px 20px;
+      }
+      header h1 {
+        font-size: 2.2rem;
+        font-weight: 900;
+        margin-bottom: 10px;
+        background: linear-gradient(135deg, var(--pink), var(--cyan));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      header p {
+        color: var(--muted);
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+
+      .features {
+        text-align: center;
+        margin: 25px auto;
+        max-width: 600px;
+        font-size: 0.95rem;
+      }
+      .features p {
+        margin: 10px 0;
+      }
+
+      .cta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        margin: 40px 0;
+      }
+      .cta a {
+        display: block;
+        width: 85%;
+        max-width: 320px;
+        padding: 16px;
+        text-align: center;
+        border-radius: var(--radius);
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        box-shadow: var(--shadow);
+        transition: transform 0.15s;
+      }
+      .cta a:hover {
+        transform: scale(1.05);
+      }
+      .cta a.whatsapp {
+        background: linear-gradient(135deg, #0088cc, #005f8e);
+      }
+      .cta a.telegram {
+        background: linear-gradient(135deg, #0088cc, #005f8e);
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 0.8rem;
+        color: var(--muted);
+      }
+    </style>
+
+
+  </head>
+  <body>
+    <header>
+      <h1>UPDATES24/7</h1>
+      <p>
+        Presentation starts soon, join both Channel and Discussion group.
+      </p>
+    </header>
+
+    <div class="features">
+      <p>📌 Have the channel pinned to your telegram messages (very important)</p>
+      <p>🔓 Make sure to unmute the channel at the bottom after joining</p>
+      <p>🔔 Once joined, ensure notifications are turned ON so you don't miss out on important updates</p>
+    </div>
+
+    <div class="cta">
+      <a
+        id="whatsapp-btn"
+        class="whatsapp"
+        href="https://ln.run/oPw8E"
+        target="_blank"
+        >📢 Join Channel</a
+      >
+      <a
+        id="telegram-btn"
+        class="telegram"
+        href="https://ln.run/unDC3"
+        target="_blank"
+        >💬 Join Discussion Group</a
+      >
+    </div>
+
+   <footer>
+  © 2025 UPDATES24/7 — All Rights Reserved.
+  &nbsp;|&nbsp;
+  <a href="https://ln.run/Adcv3" target="_blank" style="color:#bbb;text-decoration:underline;">
+    Privacy Policy
+  </a>
+</footer>
+
+
+    <!-- TikTok CTA Tracking -->
+    <script>
+      // Track page view (ViewContent)
+      ttq.track('ViewContent', {
+        contents: [{
+          content_id: "updates247_landing",
+          content_type: "page",
+          content_name: "Landing Page"
+        }],
+        value: 0,
+        currency: "USD"
+      });
+
+      // Track WhatsApp button click
+      document.getElementById("whatsapp-btn").addEventListener("click", function() {
+        ttq.track('ClickButton', {
+          contents: [{
+            content_id: "whatsapp_cta",
+            content_type: "button",
+            content_name: "Join WhatsApp Channel"
+          }],
+          value: 0,
+          currency: "USD"
+        });
+      });
+
+      // Track Telegram button click
+      document.getElementById("telegram-btn").addEventListener("click", function() {
+        ttq.track('ClickButton', {
+          contents: [{
+            content_id: "telegram_cta",
+            content_type: "button",
+            content_name: "Join Telegram Channel"
+          }],
+          value: 0,
+          currency: "USD"
+        });
+      });
+    </script>
+  </body>
+</html>
